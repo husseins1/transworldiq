@@ -136,7 +136,7 @@ const imgs = [
   "./images/najaf3.jpg",
   "./images/najaf4.jpg",
   "./images/landini12.jpg",
-  "https://www.landini.it/wp-content/uploads/2020/10/Landini_Homepage_03_1920x900px-2.jpg",
+  "./images/najaf9.jpg",
   "./images/transworldCard.png",
   "./images/god.jpg",
 ];
