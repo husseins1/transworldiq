@@ -6,7 +6,7 @@ const navClose = document.querySelector(".close");
 
 const navLeft = menu.getBoundingClientRect().left;
 navOpen.addEventListener("click", () => {
-  console.log(navLeft);
+
   if (!menu.classList.contains("show")) {
     menu.classList.add("show");
     document.body.classList.add("show");
@@ -15,6 +15,7 @@ navOpen.addEventListener("click", () => {
 });
 
 navClose.addEventListener("click", () => {
+  console.log("j");
   if (menu.classList.contains("show")) {
     menu.classList.remove("show");
     document.body.classList.remove("show");
@@ -108,37 +109,18 @@ if (!document.body.classList.contains("ar")) {
     .go();
 }
 
-gsap.from(".logo", { opacity: 0, duration: 1, delay: 0.5, y: -10 });
-gsap.from(".hamburger", { opacity: 0, duration: 1, delay: 0.5, x: 20 });
-// gsap.from(".banner", { opacity: 0, duration: 1, delay: 0.5, x: -200 });
-// gsap.from(".hero h3", { opacity: 0, duration: 1, delay: 0.5, y: -50 });
-gsap.from(".hero h1", { opacity: 0, duration: 1, delay: 0.5, y: -45 });
-gsap.from(".hero h4", { opacity: 0, duration: 1, delay: 0.5, y: -30 });
-gsap.from(".hero a", { opacity: 0, duration: 1, delay: 0.5, y: 50 });
-gsap.from(".nav-item", {
-  opacity: 0,
-  duration: 1,
-  delay: 1.2,
-  y: 30,
-  stagger: 0.2,
-});
-// gsap.from(".icons span", {
-//   opacity: 0,
-//   duration: 1,
-//   delay: 4,
-//   x: -30,
-//   stagger: 0.2,
-// });
-
 const hero = document.querySelector(".hero");
 let i = 0;
 const imgs = [
   "./images/najaf3.jpg",
   "./images/najaf4.jpg",
+  
   "./images/landini12.jpg",
   "./images/najaf9.jpg",
-  "./images/transworldCard.png",
+  "./images/transworldCard.jpg",
   "./images/god.jpg",
+  "./images/sulfur8.jpg",
+  
 ];
 const interval = setInterval(() => {
   i++;
@@ -147,6 +129,7 @@ const interval = setInterval(() => {
   }
   hero.style.background = `url(${imgs[i]})`;
   hero.style.backgroundSize = "cover";
+  hero.style.backgroundPosition ="center"
 }, 5000);
 // form submition
 
@@ -195,3 +178,12 @@ model.addEventListener("click", (e) => {
   if (!e.target.classList.contains("model")) return;
   model.classList.add("hidden");
 });
+
+// announcements
+
+const announcements = document.querySelector(".announcements")
+const closeAnnouncement = document.querySelector(".announcements__close");
+
+closeAnnouncement.addEventListener("click",()=>{
+  announcements.classList.toggle("notifyClose")
+})
