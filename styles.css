@@ -245,7 +245,7 @@ li {
   color: #fff;
   z-index: 2;
 
-  background: url("./images/god.jpg");
+  background: url("./images/najaf9.jpg");
   box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.4);
   background-size: cover;
   flex: 1;
@@ -990,9 +990,10 @@ box-shadow: inset 19px 19px 24px #d49405,
 @media only screen and (max-width:500px) {
   .styled-table{
     font-size: 70%;
-   margin:1rem;
+   width: 90%;
   }
 }
+
 
 .styled-table caption{
  background: #dd9a05;

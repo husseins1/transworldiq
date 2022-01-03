@@ -109,28 +109,6 @@ if (!document.body.classList.contains("ar")) {
     .go();
 }
 
-const hero = document.querySelector(".hero");
-let i = 0;
-const imgs = [
-  "./images/najaf3.jpg",
-  "./images/najaf4.jpg",
-  
-  "./images/landini12.jpg",
-  "./images/najaf9.jpg",
-  "./images/transworldCard.jpg",
-  "./images/god.jpg",
-  "./images/sulfur8.jpg",
-  
-];
-const interval = setInterval(() => {
-  i++;
-  if (i > imgs.length - 1) {
-    i = 0;
-  }
-  hero.style.background = `url(${imgs[i]})`;
-  hero.style.backgroundSize = "cover";
-  hero.style.backgroundPosition ="center"
-}, 5000);
 // form submition
 
 const form = document.querySelector(".form");
