@@ -1024,3 +1024,15 @@ box-shadow: inset 19px 19px 24px #d49405,
     
     color: #dd9a05;
 }
+
+.map{
+  margin:2rem auto;
+  text-align: center;
+}
+.map__heading{
+  margin-bottom: 1rem;
+  
+}
+.map iframe{
+  width: 80%;
+}
