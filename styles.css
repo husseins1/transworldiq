@@ -590,6 +590,10 @@ a.btn:active {
   .grid {
     grid-template-columns: 1fr;
   }
+  .grid.najaf{
+    display: flex;
+    flex-direction: column;
+  }
  
 }
 .grid.najaf {
